@@ -17,27 +17,32 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 
-test:
-  <<: *default
-  adapter: postgresql
-  database: sadaram_test
-  username: postgres  
-  password: rails   
-  host: localhost
-  port: 5432
+# test:
+#   <<: *default
+#   adapter: postgresql
+#   database: sadaram_test
+#   username: postgres  
+#   password: rails   
+#   host: localhost
+#   port: 5432
 
 
 # test:
 #   <<: *default
 #   database: sadaram_3
 
-# # production:
-# #   <<: *default
-# #   database: sadaram_3
-# #   username: postgres
-# #   password: rails
-# #   url: <%= ENV['DATABASE_URL'] %>
+# production:
+#   <<: *default
+#   database: sadaram_3
+#   username: postgres
+#   password: rails
+#   url: <%= ENV['DATABASE_URL'] %>
 
-production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+# production:
+#   <<: *default
+#   url: <%= ENV['DATABASE_URL'] %>
+
+
+
+
+  

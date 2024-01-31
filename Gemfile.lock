@@ -98,8 +98,6 @@ GEM
     bcrypt (3.1.20)
     bigdecimal (3.1.6)
     bindex (0.8.1)
-    bootsnap (1.18.1)
-      msgpack (~> 1.2)
     builder (3.2.4)
     byebug (11.1.3)
     capybara (3.40.0)
@@ -198,7 +196,6 @@ GEM
     mini_magick (4.12.0)
     mini_mime (1.1.5)
     minitest (5.21.2)
-    msgpack (1.7.2)
     mutex_m (0.2.0)
     net-imap (0.4.9.1)
       date
@@ -230,7 +227,7 @@ GEM
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.3)
-    rack (3.0.8)
+    rack (3.0.9)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -347,7 +344,6 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   activeadmin (~> 3.1)
-  bootsnap
   byebug
   capybara
   carrierwave (~> 2.1)
