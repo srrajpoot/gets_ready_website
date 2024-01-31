@@ -38,9 +38,9 @@ development:
 #   password: rails
 #   url: <%= ENV['DATABASE_URL'] %>
 
-# production:
-#   <<: *default
-#   url: <%= ENV['DATABASE_URL'] %>
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
 
 
 
