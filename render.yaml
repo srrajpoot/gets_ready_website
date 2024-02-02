@@ -5,7 +5,7 @@ databases:
 
 services:
   - type: web
-    name: gets_ready_website
+    name: gets_ready
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
