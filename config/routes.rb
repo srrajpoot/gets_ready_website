@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
    get 'getsde/index'
   # get '*path' => redirect('/')
-  # root "render#index"
+  root "render#index"
 
   # get "up" => "rails/health#show", as: :rails_health_check
 

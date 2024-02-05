@@ -2,13 +2,16 @@ databases:
   - name: postgresql_f7qf
     databaseName: postgresql_f7qf
     user: postgresql_f7qf_user
+    plan: free
 
 services:
   - type: web
     name: gets_ready_website
     runtime: ruby
+    plan: free
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    # preDeployCommand: "./bin/rails db:migrate" # preDeployCommand only available on paid instance types
+    startCommand: "./bin/rails server"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
