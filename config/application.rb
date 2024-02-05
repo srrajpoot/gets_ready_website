@@ -27,9 +27,15 @@ module Getsready
 
     config.load_defaults 6.1
     config.autoload = :classic
+    config.before_initialize do
+      Getsready::Application.initialize!
+    end
 
 # Comment out or remove the following line
 # config.middleware.use Bootsnap::CompileCache
 
   end
 end
+
+
+
